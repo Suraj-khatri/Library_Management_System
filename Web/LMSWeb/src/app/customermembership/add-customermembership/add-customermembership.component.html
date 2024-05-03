@@ -1,0 +1,63 @@
+<mat-card>
+  <div class="container">
+    <form class="form">
+
+      <!-- Name -->
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput name="name" placeholder="Name"  [(ngModel)]="customerMembership.name" #name ="ngModel" required >
+        <mat-icon matSuffix>person</mat-icon>
+        <mat-hint *ngIf="name.invalid && name.touched" >
+          <span *ngIf="name.errors?.['required']">Please enter your Name</span>
+        </mat-hint>
+      </mat-form-field>
+
+      <!-- Email -->
+      <mat-form-field appearance="fill">
+        <mat-label>Enter Your Email</mat-label>
+        <input matInput name="email" placeholder="Email" [(ngModel)]="customerMembership.email" #email="ngModel" required >
+        <mat-icon matSuffix>email</mat-icon>
+        <mat-hint *ngIf="email.invalid && email.touched">
+          <span *ngIf="email.errors?.['required']">Email is required</span>
+        </mat-hint>
+      </mat-form-field>
+
+      <!-- User Name -->
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your User Name</mat-label>
+        <input type="text" name="userName" matInput placeholder="Username" [(ngModel)]="customerMembership.userName" required #userName="ngModel" minlength="10" [required]="true">
+        <mat-icon matSuffix>person</mat-icon>
+        <mat-hint *ngIf="userName.invalid && userName.touched">User Name is required</mat-hint>
+      </mat-form-field>
+
+      <!-- Password -->
+      <mat-form-field appearance="fill">
+        <mat-label>Enter a Password</mat-label>
+        <input type="password" name="password" matInput placeholder="Password" [(ngModel)]="customerMembership.password" #password="ngModel" required>
+        <mat-icon matSuffix>password</mat-icon>
+        <mat-hint *ngIf="password.invalid && password.touched">Please enter your password</mat-hint>
+      </mat-form-field>
+
+      <!-- User Type -->
+      <mat-form-field appearance="fill">
+        <mat-label>User Type</mat-label>
+        <mat-select name="userType" placeholder="Select User Type" [(ngModel)]="customerMembership.userType" required>
+          <mat-option *ngFor="let userType of userTypeList" [value]="userType.userTypeId">{{ userType.userType }}</mat-option>
+        </mat-select>
+        <mat-icon matSuffix>group</mat-icon>
+      </mat-form-field>
+
+      <!-- Membership Type -->
+      <mat-form-field>
+        <mat-select name="membershipType" placeholder="Select Membership Type" [(ngModel)]="customerMembership.membershipId" #membershipType="ngModel" required>
+          <mat-option *ngFor="let membership of membershipTypeList" [value]="membership.membershipTypeId">{{ membership.membershipType }}</mat-option>
+        </mat-select>
+        {{membershipType.value}}
+      <mat-icon matSuffix>card_membership</mat-icon>
+    </mat-form-field>
+
+      <button mat-raised-button color="primary" (click)="save()">Add</button>
+      <button mat-button [mat-dialog-close]>Close</button>
+    </form>
+  </div>
+</mat-card>

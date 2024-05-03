@@ -1,0 +1,52 @@
+<h2>New Book Details</h2>
+<form #myForm="ngForm"  class="add-new-book">
+
+  <mat-form-field appearance="fill">
+    <mat-label>Title</mat-label>
+    <input matInput name="title" placeholder="Title"  [(ngModel)]="formObject.title"   required minlength="10">
+    <mat-icon matSuffix>title</mat-icon>
+
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Author</mat-label>
+    <input matInput name="author" placeholder="Author" [(ngModel)]="formObject.author" #author="ngModel" required minlength="10">
+    <mat-icon matSuffix>person</mat-icon>
+    <mat-hint *ngIf="author.invalid && author.touched" >
+      <span *ngIf="author.errors?.['required']"></span>
+    </mat-hint>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select name="genre" placeholder="Select Book Genre" [(ngModel)]="formObject.genre" #genre="ngModel" required>
+      <mat-option *ngFor="let genre of bookGenre" [value]="genre.genreId">{{ genre.genre }}</mat-option>
+    </mat-select>
+  <mat-icon matSuffix>lock</mat-icon>
+
+</mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Quantity</mat-label>
+    <input type="number" name="quantity" matInput placeholder="Quantity" [(ngModel)]="formObject.quantity" required #quantity="ngModel" min="10" max="1000">
+    <mat-icon matSuffix>123</mat-icon>
+    <mat-hint *ngIf="quantity.invalid && quantity.touched" >Please enter the quantity</mat-hint>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Available Quantity</mat-label>
+    <input type="number" name="availableQuantity" matInput placeholder="AvailableQuantity" [(ngModel)]="formObject.availableQuantity" required #aquantity="ngModel" min="10" max="1000">
+    <mat-icon matSuffix>123</mat-icon>
+    <mat-hint *ngIf="aquantity.invalid && aquantity.touched" >Please enter the available quantity</mat-hint>
+  </mat-form-field>
+
+
+  <!-- <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker" name="publishedOn" ngModel>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> -->
+</form>
+
+<button mat-raised-button color="primary" (click)="save()" [disabled]="!myForm.valid">Save</button>
+<button mat-button [mat-dialog-close]>Close</button>
+
+<!-- {{myForm.value |json}} -->

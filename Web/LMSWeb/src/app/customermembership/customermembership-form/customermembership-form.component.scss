@@ -1,0 +1,27 @@
+/* form.component.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .form {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 90%;
+  }
+}

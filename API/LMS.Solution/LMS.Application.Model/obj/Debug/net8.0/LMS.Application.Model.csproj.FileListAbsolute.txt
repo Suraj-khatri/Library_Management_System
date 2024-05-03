@@ -1,0 +1,11 @@
+E:\LMS\API\LMS.Solution\LMS.Application.Model\bin\Debug\net8.0\LMS.Application.Model.deps.json
+E:\LMS\API\LMS.Solution\LMS.Application.Model\bin\Debug\net8.0\LMS.Application.Model.dll
+E:\LMS\API\LMS.Solution\LMS.Application.Model\bin\Debug\net8.0\LMS.Application.Model.pdb
+E:\LMS\API\LMS.Solution\LMS.Application.Model\obj\Debug\net8.0\LMS.Application.Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\LMS\API\LMS.Solution\LMS.Application.Model\obj\Debug\net8.0\LMS.Application.Model.AssemblyInfoInputs.cache
+E:\LMS\API\LMS.Solution\LMS.Application.Model\obj\Debug\net8.0\LMS.Application.Model.AssemblyInfo.cs
+E:\LMS\API\LMS.Solution\LMS.Application.Model\obj\Debug\net8.0\LMS.Application.Model.csproj.CoreCompileInputs.cache
+E:\LMS\API\LMS.Solution\LMS.Application.Model\obj\Debug\net8.0\LMS.Application.Model.dll
+E:\LMS\API\LMS.Solution\LMS.Application.Model\obj\Debug\net8.0\refint\LMS.Application.Model.dll
+E:\LMS\API\LMS.Solution\LMS.Application.Model\obj\Debug\net8.0\LMS.Application.Model.pdb
+E:\LMS\API\LMS.Solution\LMS.Application.Model\obj\Debug\net8.0\ref\LMS.Application.Model.dll

@@ -1,0 +1,9 @@
+<div class="number-guessing-game-container">
+  <h1 class="number-guessing-game-header">Win this game then you can proceed!!!!</h1>
+  <p>{{ message }}</p>
+  <input type="number" [(ngModel)]="userGuess" class="user-guess-input">
+  <div class="button-container">
+    <button (click)="checkGuess()">Submit Guess</button>
+    <button (click)="resetGame()">Reset Game</button>
+  </div>
+</div>

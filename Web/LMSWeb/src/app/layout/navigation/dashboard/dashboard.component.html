@@ -1,0 +1,32 @@
+<div class="dashboard-content">
+  <div class="widget">
+    <h2>Total Books</h2>
+    <p>{{dashboard?.books}}</p>
+  </div>
+  <div class="widget">
+    <h2>Total Users</h2>
+    <p>{{dashboard?.users}}</p>
+  </div>
+  <div class="widget">
+    <h2>Total Amount</h2>
+    <p>{{dashboard?.amount}}</p>
+  </div>
+</div>
+<div class="dashboard-content">
+  <div class="widget">
+    <h2>Today Book sales No.</h2>
+    <p>{{dashboard?.todayTotalSale}}</p>
+  </div>
+  <div class="widget">
+    <h2>Today New User Created</h2>
+    <p>{{dashboard?.newUsers}}</p>
+  </div>
+  <div class="widget">
+    <h2>Total Users with Membership</h2>
+    <p>{{dashboard?.customerMembership}}</p>
+  </div>
+</div>
+<div class="example-sidenav-content">
+  <router-outlet></router-outlet>
+</div>
+

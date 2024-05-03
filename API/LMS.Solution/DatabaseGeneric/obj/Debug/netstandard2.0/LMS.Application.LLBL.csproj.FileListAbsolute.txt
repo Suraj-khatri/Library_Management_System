@@ -1,0 +1,10 @@
+E:\LMS\API\LMS.Solution\DatabaseGeneric\bin\Debug\netstandard2.0\LMS.Application.LLBL.deps.json
+E:\LMS\API\LMS.Solution\DatabaseGeneric\bin\Debug\netstandard2.0\LMS.Application.LLBL.dll
+E:\LMS\API\LMS.Solution\DatabaseGeneric\bin\Debug\netstandard2.0\LMS.Application.LLBL.pdb
+E:\LMS\API\LMS.Solution\DatabaseGeneric\obj\Debug\netstandard2.0\LMS.Application.LLBL.csproj.AssemblyReference.cache
+E:\LMS\API\LMS.Solution\DatabaseGeneric\obj\Debug\netstandard2.0\LMS.Application.LLBL.GeneratedMSBuildEditorConfig.editorconfig
+E:\LMS\API\LMS.Solution\DatabaseGeneric\obj\Debug\netstandard2.0\LMS.Application.LLBL.AssemblyInfoInputs.cache
+E:\LMS\API\LMS.Solution\DatabaseGeneric\obj\Debug\netstandard2.0\LMS.Application.LLBL.AssemblyInfo.cs
+E:\LMS\API\LMS.Solution\DatabaseGeneric\obj\Debug\netstandard2.0\LMS.Application.LLBL.csproj.CoreCompileInputs.cache
+E:\LMS\API\LMS.Solution\DatabaseGeneric\obj\Debug\netstandard2.0\LMS.Application.LLBL.dll
+E:\LMS\API\LMS.Solution\DatabaseGeneric\obj\Debug\netstandard2.0\LMS.Application.LLBL.pdb

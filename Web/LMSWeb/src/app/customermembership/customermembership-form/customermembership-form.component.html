@@ -1,0 +1,24 @@
+<mat-card>
+  <div class="container">
+    <form class="form">
+
+      <mat-form-field>
+        <mat-select name="userId" placeholder="Select User" [(ngModel)]="customerMembership.userId" #userId="ngModel" required>
+          <mat-option *ngFor="let user of userList" [value]="user.userId">{{ user.name }}</mat-option>
+        </mat-select>
+      <mat-icon matSuffix>people</mat-icon>
+      <!-- {{userId.value}} -->
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select name="membershipId" placeholder="Select Membership Type" [(ngModel)]="customerMembership.membershipId" #membershipId="ngModel" required>
+        <mat-option *ngFor="let membership of membershipTypeList" [value]="membership.membershipTypeId">{{ membership.membershipType }}</mat-option>
+      </mat-select>
+      <!-- {{membershipId.value}} -->
+    <mat-icon matSuffix>card_membership</mat-icon>
+  </mat-form-field>
+      <button mat-raised-button color="primary" (click)="save()">Upgrade</button>
+      <button mat-button [mat-dialog-close]>Close</button>
+    </form>
+  </div>
+</mat-card>

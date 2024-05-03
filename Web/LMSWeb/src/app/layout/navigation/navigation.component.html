@@ -1,0 +1,43 @@
+<mat-toolbar color="primary">
+  <button mat-button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>LMS App</span>
+  <span class="example-spacer"></span>
+  <button mat-raised-button color="primary" (click)="logout()">Logout</button>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <mat-nav-list>
+      <mat-list-item *ngFor="let item of navigationList">
+        <button mat-button [routerLink]="item.url">
+          <mat-icon>{{ item.icon }}</mat-icon> {{ item.name }}
+        </button>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <router-outlet></router-outlet>
+
+    <!-- Library Welcome Card -->
+    <!-- <div class="container">
+      <mat-card class="welcome-card">
+        <mat-card-header>
+          <mat-card-title>Welcome to Our Library</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Discover a world of knowledge and imagination</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" class="explore-button">Explore Our Collection</button>
+        </mat-card-actions>
+      </mat-card>
+    </div> -->
+    <!-- End of Library Welcome Card -->
+  </div>
+</mat-drawer-container>

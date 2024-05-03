@@ -1,0 +1,88 @@
+<mat-card>
+  <div class="container">
+    <form class="form">
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Name"
+          required
+          name="name"
+          [(ngModel)]="formObject.name"
+          #name="ngModel">
+        <mat-icon matSuffix>perm_identity</mat-icon>
+        <mat-error
+          *ngIf="name.invalid">
+          Name is required
+        </mat-error>
+      </mat-form-field>
+    <!---------------------   Email-------------------->
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Email"
+          required
+          name="email"
+          [(ngModel)]="formObject.email"
+          #email="ngModel">
+          <mat-error *ngIf="email.invalid">Email is required</mat-error>
+        <mat-icon matSuffix>email</mat-icon>
+      </mat-form-field>
+       <!---------------------------   Phone----------------------------------->
+       <mat-form-field>
+        <input
+          matInput
+          placeholder="Phone"
+          required
+          name="phone"
+          [(ngModel)]="formObject.phone"
+          #userName="ngModel">
+        <mat-icon matSuffix>phone</mat-icon>
+        <mat-error
+          *ngIf="userName.invalid">
+          Phone is required
+        </mat-error>
+      </mat-form-field>
+    <!---------------------------   User Name----------------------------------->
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="User Name"
+          required
+          name="userName"
+          [(ngModel)]="formObject.userName"
+          #userName="ngModel">
+        <mat-icon matSuffix>perm_identity</mat-icon>
+        <mat-error
+          *ngIf="userName.invalid">
+          UserName is required
+        </mat-error>
+      </mat-form-field>
+    <!------------------------------------   Password----------------------------------->
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Password"
+          type="password"
+          name="password"
+          required
+          [(ngModel)]="formObject.password"
+          #password="ngModel">
+          <mat-error
+          *ngIf="userName.invalid">
+          UserName is required
+        </mat-error>
+        <mat-icon matSuffix>lock</mat-icon>
+      </mat-form-field>
+      <!------------------------ UserType------------------------>
+      <mat-form-field>
+          <mat-select name="userType" placeholder="Select User Type" [(ngModel)]="formObject.userType" #userTypeSelect="ngModel" required>
+            <mat-option *ngFor="let userType of userTypeList" [value]="userType.userTypeId" [disabled]="userType.userType === 'Admin' && userId !== '1' " >{{ userType.userType }}</mat-option>
+          </mat-select>
+        <mat-icon matSuffix>lock</mat-icon>
+      </mat-form-field>
+    </form>
+<button mat-raised-button color="primary" (click)="save()" >Save</button>
+
+    <button mat-button [mat-dialog-close]>Close</button>
+  </div>
+</mat-card>

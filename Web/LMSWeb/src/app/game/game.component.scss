@@ -1,0 +1,51 @@
+.number-guessing-game-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.number-guessing-game-header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.user-guess-input {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.message-container {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.message-container p {
+  margin: 5px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.button-container {
+  margin-left: auto;
+}
+
+.button-container button {
+  margin-right: auto;
+}
+

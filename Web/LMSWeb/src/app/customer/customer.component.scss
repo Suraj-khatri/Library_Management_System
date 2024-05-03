@@ -1,0 +1,48 @@
+/* Font Stack */
+body {
+  font-family: 'Lato', Arial, sans-serif;
+  color: #202020;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+td, th {
+  border: 1px solid #ECF0F1;
+  padding: 10px;
+}
+
+th {
+  background-color: #4ECDC4;
+}
+
+tr:nth-of-type(even) td {
+  background-color: #E0F2F1;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 760px) {
+  /* Styles for smaller devices */
+}
+
+@media only screen and (max-width: 300px) {
+  /* Additional styles for even smaller devices */
+}
+
+/* Other Styles */
+.mobile-header {
+  display: none;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
